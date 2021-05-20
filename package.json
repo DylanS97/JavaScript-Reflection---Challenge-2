@@ -1,0 +1,31 @@
+{
+  "name": "web-development",
+  "version": "1.0.0",
+  "description": "Netmatters HTML & CSS Reflection",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanS97/Web-Development.git"
+  },
+  "author": "Dylan Stevenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DylanS97/Web-Development/issues"
+  },
+  "homepage": "https://github.com/DylanS97/Web-Development#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-arrow-functions": "^7.13.0",
+    "@babel/plugin-transform-block-scoping": "^7.14.2",
+    "@babel/plugin-transform-classes": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "jquery": "^3.6.0"
+  }
+}
