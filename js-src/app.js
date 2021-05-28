@@ -49,7 +49,7 @@ $('.add-img').on('click', () => {
     email = $('input[type="email"]').val();
 
     if (!emailValidate(email)) {
-        return alert("Invalid email!");
+        return alert("Email is invalid!");
     }
     
     // Checks if the email already exists in the list
@@ -142,5 +142,5 @@ function removeWhitespace(e) {
 
 
 function alreadyExists() {
-    return console.log("already assigned");
+    return alert("Image is already assigned to that email.");
 }

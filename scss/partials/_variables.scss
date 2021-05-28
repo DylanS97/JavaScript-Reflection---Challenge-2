@@ -1,0 +1,15 @@
+
+// Colours
+$main-colour: #333645;
+$light-main: lighten($main-colour, 10%);
+$x-light-main: lighten($main-colour, 20%);
+$dark-main: darken($main-colour, 10%);
+$font-colour: #fff;
+$input-focus: #08f;
+
+// Font
+$font: 'Poppins', sans-serif;
+$x-light: 200;
+$light: 300;
+$normal: 400;
+$semi-bold: 600;

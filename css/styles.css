@@ -1,5 +1,5 @@
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -24,11 +24,20 @@ body > *:not(:first-child) {
 
 button {
   background-color: #1d1f28;
-  color: white;
+  color: #fff;
   border-radius: 4px;
   border: none;
   cursor: pointer;
   font-weight: 200;
+}
+
+.header h1 {
+  margin: 0;
+  line-height: 1;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
 }
 
 .image-container {
@@ -40,7 +49,6 @@ button {
 .image-container .image {
   height: 100%;
   width: 100%;
-  background-color: black;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -102,7 +110,7 @@ button {
 }
 
 .saved-imgs > ul {
-  background: #3e4154;
+  background: #494d62;
 }
 
 .saved-imgs > ul > li {
@@ -117,10 +125,7 @@ button {
 .saved-imgs > ul > li .text {
   width: 100%;
   padding: 10px;
-  border: 2px groove #111111;
-  -webkit-box-shadow: 0px 2px #000;
-          box-shadow: 0px 2px #000;
-  z-index: 100;
+  border: 2px solid #1d1f28;
 }
 
 .saved-imgs > ul > li .text > * {
@@ -139,7 +144,7 @@ button {
 .saved-imgs > ul > li .text > .fas {
   font-size: 2rem;
   float: right;
-  color: black;
+  color: #fff;
   margin: 1rem 20px 0 0;
 }
 
@@ -189,15 +194,6 @@ button {
 
 .saved-imgs > ul > li:hover > ul > li {
   height: 100px;
-}
-
-.header h1 {
-  margin: 0;
-  line-height: 1;
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
-  color: white;
 }
 
 @media only screen and (max-width: 1462px) {
