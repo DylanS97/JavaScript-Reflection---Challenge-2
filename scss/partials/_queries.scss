@@ -1,0 +1,80 @@
+
+@media only screen and (max-width: 1462px) {
+    .form > form input[type="email"] {
+        width: 40%;
+    }
+    .saved-imgs > ul > li .text {
+        > h2 {
+            font-size: 1.5rem;
+        }
+        > .fas {
+            margin: 10px 20px 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1228px) {
+    .form {
+        float: none;
+    }
+    .form,
+    .image-container {
+        width: 100%;
+    }
+    .saved-imgs > ul > li .text {
+        > h2 {
+            font-size: 2rem;
+        }
+        > .fas {
+            margin: 16px 20px 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 658px) {
+    .form > form button {
+        width: 120px;
+        font-size: .75rem;
+    }
+    .saved-imgs > ul > li .text {
+        > h2 {
+            font-size: 1.25rem;
+        }
+        > .fas {
+            margin: 7px 20px 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 542px) {
+    .form > form  {
+        input[type="email"] {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        button.add-img {
+            float: left;
+        }
+        button.new-img {
+            float: right;
+        }
+        button {
+            float: none;
+            display: inline-block;
+            width: 45%;
+            margin-bottom: 20px;
+            &.add-img {
+                margin: 0;
+            }
+        }
+    }
+    .saved-imgs > ul > li .text {
+        > h2 {
+            font-size: .75rem;
+        }
+        > .fas {
+            font-size: 1rem;
+            margin: 6px 10px 0 0;
+        }
+    }
+}
