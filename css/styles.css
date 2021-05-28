@@ -133,6 +133,7 @@ button {
   line-height: 2;
   font-size: 2rem;
   font-weight: 400;
+  color: white;
 }
 
 .saved-imgs > ul > li .text > .fas {
@@ -196,6 +197,7 @@ button {
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
+  color: white;
 }
 
 @media only screen and (max-width: 1462px) {
