@@ -39,10 +39,22 @@ var email;
 $('.add-img').on('click', function () {
   // Gets list & input field value.
   present = Array.prototype.slice.call(document.querySelectorAll('.saved-imgs > ul > li'));
-  email = $('input[type="email"]').val();
+  email = $('input[type="email"]').val(); // Validated email.
 
   if (!emailValidate(email)) {
-    return alert("Email is invalid!");
+    $('.popup').removeClass("popup-hidden");
+    $('.inval-mail').css({
+      display: "block"
+    });
+    setTimeout(function () {
+      $('.popup').addClass("popup-hidden");
+    }, 3000);
+    setTimeout(function () {
+      $('.inval-mail').css({
+        display: "none"
+      });
+    }, 3100);
+    return;
   } // Checks if the email already exists in the list
 
 
@@ -58,9 +70,33 @@ $('.add-img').on('click', function () {
 
   if (!exists) {
     addEmailAndImage();
+    $('.popup').removeClass("popup-hidden");
+    $('.new-email').css({
+      display: "block"
+    });
+    setTimeout(function () {
+      $('.popup').addClass("popup-hidden");
+    }, 3000);
+    setTimeout(function () {
+      $('.new-email').css({
+        display: "none"
+      });
+    }, 3100);
   } else {
     exists = false;
     addToEmail();
+    $('.popup').removeClass("popup-hidden");
+    $('.add-to-email').css({
+      display: "block"
+    });
+    setTimeout(function () {
+      $('.popup').addClass("popup-hidden");
+    }, 3000);
+    setTimeout(function () {
+      $('.add-to-email').css({
+        display: "none"
+      });
+    }, 3100);
   }
 
   newImage();
@@ -118,5 +154,17 @@ function removeWhitespace(e) {
 }
 
 function alreadyExists() {
-  return alert("Image is already assigned to that email.");
+  $('.popup').removeClass("popup-hidden");
+  $('.already-assigned').css({
+    display: "block"
+  });
+  setTimeout(function () {
+    $('.popup').addClass("popup-hidden");
+  }, 3000);
+  setTimeout(function () {
+    $('.already-assigned').css({
+      display: "none"
+    });
+  }, 3100);
+  return;
 }

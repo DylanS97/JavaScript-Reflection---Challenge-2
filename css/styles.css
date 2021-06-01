@@ -14,7 +14,7 @@ body {
   background: #333645;
 }
 
-body > *:not(:first-child) {
+body > * {
   padding-top: 50px;
 }
 
@@ -194,6 +194,41 @@ button {
 
 .saved-imgs > ul > li:hover > ul > li {
   height: 100px;
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  height: 100px;
+  width: 100%;
+  max-width: 350px;
+  background: #aaa;
+  margin: auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 10px #1d1f28, -5px -5px 10px #1d1f28;
+          box-shadow: 5px 5px 10px #1d1f28, -5px -5px 10px #1d1f28;
+  padding: 40px;
+  text-align: center;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.popup > div {
+  display: none;
+  height: 100%;
+}
+
+.popup p {
+  font-size: 1.125rem;
+  height: 100%;
+  line-height: 1.1;
+}
+
+.popup-hidden {
+  top: -100%;
 }
 
 @media only screen and (max-width: 1462px) {

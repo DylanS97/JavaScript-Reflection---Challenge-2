@@ -1,0 +1,29 @@
+.popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100px;
+    width: 100%;
+    max-width: 350px;
+    background: #aaa;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px $dark-main, -5px -5px 10px $dark-main;
+    padding: 40px;
+    text-align: center;
+    transition: .4s ease-in-out;
+    > div {
+        display: none;
+        height: 100%;
+    }
+    p {
+        font-size: 1.125rem;
+        height: 100%;
+        line-height: 1.1;
+    }
+}
+
+.popup-hidden {
+    top: -100%;
+}

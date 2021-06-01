@@ -13,7 +13,7 @@ body {
     // Font Family
     padding: 50px;
     background: $main-colour;
-    > *:not(:first-child) {
+    > *:not(:first-child, :last-child) {
         padding-top: 50px;
     }
 }
