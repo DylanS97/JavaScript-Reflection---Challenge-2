@@ -5,7 +5,8 @@ $(document).ready(function () {
   newImage();
 }); // When new image button clicked
 
-$('.new-img').on('click', function () {
+$('.new-img').on('click', function (e) {
+  e.preventDefault();
   newImage();
 }); // Change image
 
@@ -99,7 +100,9 @@ $('.add-img').on('click', function () {
     }, 3100);
   }
 
-  newImage();
+  setTimeout(function () {
+    newImage();
+  }, 3200);
 }); // Adds new email and image
 
 function addEmailAndImage() {

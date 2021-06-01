@@ -6,7 +6,8 @@ $(document).ready(() => {
 })
 
 // When new image button clicked
-$('.new-img').on('click', () => {
+$('.new-img').on('click', (e) => {
+    e.preventDefault();
     newImage();
 })
 
@@ -95,7 +96,9 @@ $('.add-img').on('click', () => {
         }, 3100);
     }
 
-    newImage();
+    setTimeout(() => {
+        newImage();
+    }, 3200);
 })
 
 // Adds new email and image
