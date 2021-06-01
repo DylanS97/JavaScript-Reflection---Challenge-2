@@ -44,7 +44,9 @@ let id = 0;
 let index;
 let email;
 
-$('.add-img').on('click', () => {
+$('.add-img').on('click', (e) => {
+    e.preventDefault();
+    
     // Gets list & input field value.
     present = Array.prototype.slice.call(document.querySelectorAll('.saved-imgs > ul > li'));
     email = $('input[type="email"]').val();

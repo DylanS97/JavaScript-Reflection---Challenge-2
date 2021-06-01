@@ -37,8 +37,9 @@ var exists = false;
 var id = 0;
 var index;
 var email;
-$('.add-img').on('click', function () {
-  // Gets list & input field value.
+$('.add-img').on('click', function (e) {
+  e.preventDefault(); // Gets list & input field value.
+
   present = Array.prototype.slice.call(document.querySelectorAll('.saved-imgs > ul > li'));
   email = $('input[type="email"]').val(); // Validated email.
 
