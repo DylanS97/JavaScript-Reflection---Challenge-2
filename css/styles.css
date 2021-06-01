@@ -14,7 +14,7 @@ body {
   background: #333645;
 }
 
-body > * {
+body > *:not(:last-child) {
   padding-top: 50px;
 }
 
