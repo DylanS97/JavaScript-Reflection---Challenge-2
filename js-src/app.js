@@ -81,10 +81,10 @@ $('.add-img').on('click', (e) => {
         $('.new-email').css({display: "block"});
         setTimeout(() => {
             $('.popup').addClass("popup-hidden");
+            setTimeout(() => {
+                $('.new-email').css({display: "none"});
+            }, 100);
         }, 3000);
-        setTimeout(() => {
-            $('.new-email').css({display: "none"});
-        }, 3100);
     } else {
         exists = false;
         addToEmail();
@@ -92,15 +92,15 @@ $('.add-img').on('click', (e) => {
         $('.add-to-email').css({display: "block"});
         setTimeout(() => {
             $('.popup').addClass("popup-hidden");
+            setTimeout(() => {
+                $('.add-to-email').css({display: "none"});
+            }, 100);
         }, 3000);
-        setTimeout(() => {
-            $('.add-to-email').css({display: "none"});
-        }, 3100);
     }
 
     setTimeout(() => {
         newImage();
-    }, 3200);
+    }, 100);
 })
 
 // Adds new email and image

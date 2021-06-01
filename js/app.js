@@ -78,12 +78,12 @@ $('.add-img').on('click', function (e) {
     });
     setTimeout(function () {
       $('.popup').addClass("popup-hidden");
+      setTimeout(function () {
+        $('.new-email').css({
+          display: "none"
+        });
+      }, 100);
     }, 3000);
-    setTimeout(function () {
-      $('.new-email').css({
-        display: "none"
-      });
-    }, 3100);
   } else {
     exists = false;
     addToEmail();
@@ -93,17 +93,17 @@ $('.add-img').on('click', function (e) {
     });
     setTimeout(function () {
       $('.popup').addClass("popup-hidden");
+      setTimeout(function () {
+        $('.add-to-email').css({
+          display: "none"
+        });
+      }, 100);
     }, 3000);
-    setTimeout(function () {
-      $('.add-to-email').css({
-        display: "none"
-      });
-    }, 3100);
   }
 
   setTimeout(function () {
     newImage();
-  }, 3200);
+  }, 100);
 }); // Adds new email and image
 
 function addEmailAndImage() {
