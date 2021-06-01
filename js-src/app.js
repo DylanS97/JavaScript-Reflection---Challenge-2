@@ -57,10 +57,10 @@ $('.add-img').on('click', (e) => {
         $('.inval-mail').css({display: "block"});
         setTimeout(() => {
             $('.popup').addClass("popup-hidden");
+            setTimeout(() => {
+                $('.inval-mail').css({display: "none"});
+            }, 100);
         }, 3000);
-        setTimeout(() => {
-            $('.inval-mail').css({display: "none"});
-        }, 3100);
         return;
     }
     
@@ -175,9 +175,9 @@ function alreadyExists() {
     $('.already-assigned').css({display: "block"});
     setTimeout(() => {
         $('.popup').addClass("popup-hidden");
+        setTimeout(() => {
+            $('.already-assigned').css({display: "none"});
+        }, 100);
     }, 3000);
-    setTimeout(() => {
-        $('.already-assigned').css({display: "none"});
-    }, 3100);
     return;
 }

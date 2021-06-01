@@ -50,12 +50,12 @@ $('.add-img').on('click', function (e) {
     });
     setTimeout(function () {
       $('.popup').addClass("popup-hidden");
+      setTimeout(function () {
+        $('.inval-mail').css({
+          display: "none"
+        });
+      }, 100);
     }, 3000);
-    setTimeout(function () {
-      $('.inval-mail').css({
-        display: "none"
-      });
-    }, 3100);
     return;
   } // Checks if the email already exists in the list
 
@@ -164,11 +164,11 @@ function alreadyExists() {
   });
   setTimeout(function () {
     $('.popup').addClass("popup-hidden");
+    setTimeout(function () {
+      $('.already-assigned').css({
+        display: "none"
+      });
+    }, 100);
   }, 3000);
-  setTimeout(function () {
-    $('.already-assigned').css({
-      display: "none"
-    });
-  }, 3100);
   return;
 }
