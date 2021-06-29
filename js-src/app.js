@@ -25,9 +25,9 @@ function newImage() {
 
 // Email verification
 function emailValidate(input) {
-    const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const mailFormat = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9]+).([a-z]+).([a-z]+)$/;
 
-    if (input.match(mailFormat)) {
+    if (mailFormat.test(input)) {
         return true;
     } else {
         return false;
